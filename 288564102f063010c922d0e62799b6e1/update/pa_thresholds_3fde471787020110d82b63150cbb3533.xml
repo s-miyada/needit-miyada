@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_thresholds">
+    <pa_thresholds action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <aggregate/>
+        <all_time_amount>0</all_time_amount>
+        <breakdown/>
+        <breakdown_level2/>
+        <condition>all_time_low</condition>
+        <create_score_notes>true</create_score_notes>
+        <display>NeedIt: Due Monthly</display>
+        <element/>
+        <element_level2/>
+        <indicator display_value="NeedIt: Due Monthly">c1876c072f010110c922d0e62799b657</indicator>
+        <last_check>20220901</last_check>
+        <owner/>
+        <sys_class_name>pa_thresholds</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-10 23:12:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3fde471787020110d82b63150cbb3533</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>NeedIt: Due Monthly</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_671553_needit">288564102f063010c922d0e62799b6e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">288564102f063010c922d0e62799b6e1</sys_scope>
+        <sys_update_name>pa_thresholds_3fde471787020110d82b63150cbb3533</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-09-01 23:00:06</sys_updated_on>
+        <value/>
+    </pa_thresholds>
+</record_update>

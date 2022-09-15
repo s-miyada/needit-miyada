@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="DELETE">
+        <operation>read</operation>
+        <source_scope display_value="NeedIt">288564102f063010c922d0e62799b6e1</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-23 23:31:50</sys_created_on>
+        <sys_id>5bde5a932f423010c922d0e62799b617</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>problem</sys_name>
+        <sys_package display_value="NeedIt" source="x_671553_needit">288564102f063010c922d0e62799b6e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">288564102f063010c922d0e62799b6e1</sys_scope>
+        <sys_update_name>sys_scope_privilege_5bde5a932f423010c922d0e62799b617</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-23 23:35:19</sys_updated_on>
+        <target_name>problem</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">288564102f063010c922d0e62799b6e1</application>
+        <file_path/>
+        <instance_id>0e700841db49370449eac5970596197f</instance_id>
+        <instance_name>dev83205</instance_name>
+        <name>sys_scope_privilege_5bde5a932f423010c922d0e62799b617</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="NeedIt">288564102f063010c922d0e62799b6e1</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-08-23 23:31:50</sys_created_on><sys_id>5bde5a932f423010c922d0e62799b617</sys_id><sys_mod_count>1</sys_mod_count><sys_name>problem</sys_name><sys_package display_value="NeedIt" source="x_671553_needit">288564102f063010c922d0e62799b6e1</sys_package><sys_policy/><sys_scope display_value="NeedIt">288564102f063010c922d0e62799b6e1</sys_scope><sys_update_name>sys_scope_privilege_5bde5a932f423010c922d0e62799b617</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-08-23 23:35:19</sys_updated_on><target_name>problem</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+        <payload_hash>-1228752735</payload_hash>
+        <record_name>problem</record_name>
+        <reverted_from/>
+        <source>f48568182f063010c922d0e62799b61d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-23 23:35:19</sys_created_on>
+        <sys_id>5eaf5a932f423010c922d0e62799b65b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b755e4b440000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-23 23:35:19</sys_updated_on>
+        <type>Cross scope privilege</type>
+        <update_guid>d6af5a93fc423010a5cd1dc63db8665b</update_guid>
+        <update_guid_history>d6af5a93fc423010a5cd1dc63db8665b:-1228752735,e7de5a9356423010cfd5aa024b0b6419:-1595031897</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-12 02:42:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_scope_privilege">sys_scope_privilege</sys_db_object>
+        <sys_id>0b993d4ffb644624b1f1b7828d90b024</sys_id>
+        <sys_metadata>5bde5a932f423010c922d0e62799b617</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>problem</sys_name>
+        <sys_package display_value="NeedIt" source="x_671553_needit">288564102f063010c922d0e62799b6e1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">288564102f063010c922d0e62799b6e1</sys_scope>
+        <sys_scope_delete display_value="">3e5778e05ef3404aa9522a95db33cf44</sys_scope_delete>
+        <sys_update_name>sys_scope_privilege_5bde5a932f423010c922d0e62799b617</sys_update_name>
+        <sys_update_version display_value="sys_scope_privilege_5bde5a932f423010c922d0e62799b617">5eaf5a932f423010c922d0e62799b65b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-12 02:42:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

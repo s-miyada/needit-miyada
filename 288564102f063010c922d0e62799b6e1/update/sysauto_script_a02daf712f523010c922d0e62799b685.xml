@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 08:52:00</entered_time>
+        <name>Find NeedIt Tasks Due Soon</name>
+        <offset/>
+        <offset_type/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2021-08-31 23:38:37</run_start>
+        <run_time>1969-12-31 23:52:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[// Get today's time and date
+var rightNow = new GlideDateTime();
+
+// Query the database for NeedIt Task records with Due date field values within
+// 24 hours from now.  Only return NeedIt Task records that do not have
+// a State field value of Closed Complete.
+var dueSoon = new GlideRecord('x_671553_needit_needit');
+dueSoon.addQuery('due_date','>=',rightNow);
+dueSoon.addQuery('due_date','<',gs.hoursAgo(-24));
+dueSoon.addQuery('state','!=',3);
+
+dueSoon.query();
+// Write a log message for each NeedIt Task Record due within 24 hours from now
+while(dueSoon.next()){
+	gs.info("NeedIt Task due soon record = " + dueSoon.number);
+			gs.eventQueue('x_671553_needit.dueSoonNeedItTasks',dueSoon,dueSoon.number,gs.getUserName());
+}
+
+
+// // Get today's time and date
+// 	var rightNow1 = new GlideDateTime();
+// 	var rightNow2 = new GlideDateTime();
+// 	var gtime = new GlideTime();
+// 	gtime.setValue("24:00:00");
+// 	rightNow2.add(gtime);
+// 	gs.info("Find NeedIt Tasks Due Soon rightNow1: " + rightNow1);
+// 	gs.info("Find NeedIt Tasks Due Soon rightNow2: " + rightNow2);
+	
+// 	// Query the database for NeedIt Task records with Due date field values older
+// 	// than the current time.  Only return NeedIt Task records that do not have
+// 	// a State field value of Closed Complete.
+// 	var overdueNITasks = new GlideRecord('x_671553_needit_needit');
+// 	overdueNITasks.addQuery('due_date', '>=', rightNow1);
+// 	overdueNITasks.addQuery('due_date', '<=', rightNow2);
+// 	overdueNITasks.addQuery('state', '!=', 3);
+
+// 	overdueNITasks.query();
+// // Write a log message for each overdue NeedIt Task Record
+// 	while(overdueNITasks.next()){
+// 		gs.info("Find NeedIt Tasks Due Soon = " + overdueNITasks.number);
+// 	}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 23:40:07</sys_created_on>
+        <sys_id>a02daf712f523010c922d0e62799b685</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Find NeedIt Tasks Due Soon</sys_name>
+        <sys_package display_value="NeedIt" source="x_671553_needit">288564102f063010c922d0e62799b6e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">288564102f063010c922d0e62799b6e1</sys_scope>
+        <sys_update_name>sysauto_script_a02daf712f523010c922d0e62799b685</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 10:20:51</sys_updated_on>
+        <time_zone>Japan</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
